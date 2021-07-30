@@ -78,4 +78,11 @@ export default Env.rules({
     // MAILGUN_DOMAIN: Env.schema.string(),
 
     // SPARKPOST_API_KEY: Env.schema.string()
+
+
+
+    //file storage to cloudinary
+    CLOUDINARY_NAME: Env.schema.string(),
+    CLOUDINARY_API_KEY: Env.schema.string(),
+    CLOUDINARY_API_SECRET: Env.schema.string(),
 })

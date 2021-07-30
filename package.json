@@ -34,6 +34,7 @@
     "@adonisjs/view": "^6.0.8",
     "adonis-graphql": "^1.0.1-alpha-4",
     "aws-sdk": "^2.956.0",
+    "cloudinary": "^1.26.2",
     "luxon": "^2.0.1",
     "mjml": "^4.10.2",
     "mysql": "^2.18.1",

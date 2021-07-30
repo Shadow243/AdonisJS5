@@ -4,11 +4,23 @@ import {
   column,
   beforeSave,
   BaseModel,
+  hasMany,
+  HasMany,
+  hasOne,
+  HasOne
 } from '@ioc:Adonis/Lucid/Orm'
+import Post from './Post'
+import Profile from './Profile'
 
 export default class User extends BaseModel {
   @column({ isPrimary: true })
   public id: number
+
+  @hasOne(() => Profile)
+  public profile: HasOne<typeof Profile>
+
+  @hasMany(() => Post)
+  public posts: HasMany<typeof Post>
 
   @column()
   public email: string
